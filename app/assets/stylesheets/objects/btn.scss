@@ -1,0 +1,41 @@
+
+
+
+//----------------------------------------\\
+// Button object
+//----------------------------------------\\
+
+@mixin o-btn {
+  background: $gray;
+  display: inline-block;
+  border: 0;
+  padding: 10px 16px;
+  border-radius: $br;
+}
+
+
+.o-btn {
+  @include o-btn;
+
+  &:hover,
+  &:focus,
+  &:active {
+    cursor: pointer;
+    outline: none;
+    background: $primary-color;
+    color: $white;
+  }
+
+
+  &.o-btn--weak {
+    background: $silver;
+  }
+
+  &.o-btn--to-danger {
+    &:hover,
+    &:focus,
+    &:active {
+      background: $danger-color;
+    }
+  }
+}

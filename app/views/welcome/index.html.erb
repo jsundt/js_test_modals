@@ -1,8 +1,64 @@
-<h1>Javascript modals</h1>
-<p>Description</p>
-<ul>
-  <li>todo</li>
-  <li>tododo</li>
-  <li>todododo</li>
-  <li>tododododo</li>
-</ul>
+<% items = [
+  {
+    id: 1,
+    name: 'Visas',
+    count: 5,
+  },
+  {
+    id: 2,
+    name: 'Passports',
+    count: 0,
+  },
+  {
+    id: 3,
+    name: 'Childhood Photos',
+    count: 36,
+  }
+] %>
+
+<div class="container u-padding-t-100 u-text--center js-modal-target">
+  <p class="u-color--weak">Replace me with a modal</p>
+</div>
+
+<div class="container u-padding-y-100">
+  <% items.each do |item| %>
+    <section class="c-item js-item">
+      <div class="c-item__content">
+        <h1 class="c-item__title"><%= item[:name] %></h1>
+        <p class="c-item__description">We've got <%= item[:count] %> documents of this type</p>
+      </div>
+      <div class="c-item__actions">
+        <button type="button" class="o-btn o-btn--weak o-btn--to-danger">Delete</button>
+      </div>
+    </section>
+  <% end %>
+</div>
+
+
+<div class="u-bg--darkgray">
+  <div class="container u-padding-y-100">
+    <h1>Javascript modals</h1>
+    <p>Description</p>
+    <ul>
+      <li>todo</li>
+      <li>tododo</li>
+      <li>todododo</li>
+      <li>tododododo</li>
+    </ul>
+  </div>
+
+  <div class="container u-padding-y-100">
+    <aside class="c-modal js-modal">
+      <header class="c-modal__header">
+        <h1>Modal header</h1>
+      </header>
+      <div class="c-modal__content">
+        <p>Modal content</p>
+      </div>
+      <footer class="c-modal__footer">
+        <button type="button" class="o-btn">Cancel</button>
+        <button type="button" class="o-btn o-btn--to-danger">Delete item</button>
+      </footer>
+    </aside>
+  </div>
+</div>

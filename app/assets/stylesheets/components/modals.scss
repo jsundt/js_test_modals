@@ -1,0 +1,36 @@
+
+
+
+//----------------------------------------\\
+// Modal
+//----------------------------------------\\
+
+.c-modal {
+  @include o-card;
+  flex-direction: column;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+  .c-modal__header {
+    @include o-card__content;
+    background: $danger-color;
+    border-top-left-radius: $br;
+    border-top-right-radius: $br;
+    text-align: center;
+    color: $white;
+  }
+
+  .c-modal__content {
+    @include o-card__content;
+  }
+
+  .c-modal__footer {
+    @include o-card__content;
+    background: $silver;
+    border-bottom-left-radius: $br;
+    border-bottom-right-radius: $br;
+    display: flex;
+    justify-content: space-between;
+  }

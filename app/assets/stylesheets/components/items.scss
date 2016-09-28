@@ -1,0 +1,21 @@
+
+
+
+//----------------------------------------\\
+// Item
+//----------------------------------------\\
+
+.c-item {
+  @include o-card;
+}
+
+  .c-item__content {
+    @include o-card__content;
+    flex-grow: 1;
+  }
+
+  .c-item__actions {
+    @include o-card__content;
+    display: flex;
+    align-items: center;
+  }

@@ -1,0 +1,24 @@
+
+
+
+//----------------------------------------\\
+// Card object
+//----------------------------------------\\
+
+@mixin o-card {
+  display: flex;
+  background: $white;
+  color: $black;
+  margin: 15px 0;
+  width: 100%;
+  border-radius: $br;
+  box-shadow: $shadow;
+}
+
+@mixin o-card__content {
+  padding: 15px;
+}
+
+.o-card {
+  @include o-card;
+}
