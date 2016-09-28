@@ -6,6 +6,11 @@ gem 'rails', '~> 5.0.0'
 gem 'puma', '~> 3.0'
 
 
+### Enable es6
+gem 'sprockets', '>=3.0.0.beta'
+gem 'sprockets-es6'
+
+
 ### Front-end
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
