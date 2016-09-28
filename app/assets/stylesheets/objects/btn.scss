@@ -7,10 +7,13 @@
 
 @mixin o-btn {
   background: $gray;
+  color: $primary-color;
   display: inline-block;
   border: 0;
   padding: 10px 16px;
   border-radius: $br;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 
@@ -24,6 +27,7 @@
     outline: none;
     background: $primary-color;
     color: $white;
+    box-shadow: $shadow;
   }
 
 

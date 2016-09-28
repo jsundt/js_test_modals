@@ -1,4 +1,4 @@
-<% items = [
+<% document_types = [
   {
     id: 1,
     name: 'Visas',
@@ -21,7 +21,7 @@
 </div>
 
 <div class="container u-padding-y-100">
-  <% items.each do |item| %>
+  <% document_types.each do |item| %>
     <section class="c-item js-item">
       <div class="c-item__content">
         <h1 class="c-item__title"><%= item[:name] %></h1>
@@ -35,25 +35,20 @@
 </div>
 
 
-<div class="u-bg--darkgray">
-  <div class="container u-padding-y-100">
-    <h1>Javascript modals</h1>
-    <p>Description</p>
-    <ul>
-      <li>todo</li>
-      <li>tododo</li>
-      <li>todododo</li>
-      <li>tododododo</li>
-    </ul>
-  </div>
 
-  <div class="container u-padding-y-100">
-    <aside class="c-modal js-modal">
+
+<%#
+### Description of tasks and dummy html for modals bellow!
+#%>
+
+<section class="u-bg--darkgray">
+  <div class="container u-padding-t-100">
+    <aside class="c-modal">
       <header class="c-modal__header">
-        <h1>Modal header</h1>
+        <h1>Name of item should go here</h1>
       </header>
       <div class="c-modal__content">
-        <p>Modal content</p>
+        <p>Description something like: 'Are you sure you want to delete this document type and the ### related documents?'</p>
       </div>
       <footer class="c-modal__footer">
         <button type="button" class="o-btn">Cancel</button>
@@ -61,4 +56,24 @@
       </footer>
     </aside>
   </div>
-</div>
+
+
+  <div class="container u-padding-y-100">
+    <h1>Javascript modals</h1>
+    <p>Setup some custom javascript that generates a modal/dialog box to confirm deletion of one of the above rendered items. You can use, good old javascript, jquery, or ES6 to do this task!</p>
+
+    <ul>
+      <li>Clicking one of the above delete buttons should create a bespoke modal / replace the text above the items.</li>
+      <li>The title and description on the modal should change based on which one is clicked.</li>
+      <li>Hitting delete should remove the item from the dom. No interaction with any kind of backend needed at this point!</li>
+    </ul>
+
+    <h2 class="u-padding-t-50">Stretch goals</h2>
+    <p>Pick the one you want or do them in any order!</p>
+    <ul>
+      <li>Make a proper floating modal with a faded out overlay.</li>
+      <li>Animate in/out modals and items when anything happens!</li>
+      <li>Check the number of documents for the specific item, and render a additional form field that needs to be filled in to confirm deletion of item and all related items!</li>
+    </ul>
+  </div>
+</section>
